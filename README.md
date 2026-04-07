@@ -1,15 +1,15 @@
 如果这个项目仓库对你有帮助，欢迎点个 Star ⭐ 支持一下！这是对我持续更新的最大鼓励！
 
-本项目实现了一套高相似度的奶龙语音生成方案，核心支持**极速语音合成**与**超低延迟流式输出**双模式。
+[奶龙语音生成器 Demo](https://dub.sh/nailong)
+
+本项目实现了高相似度的奶龙语音生成，支持**极速语音合成**与**超低延迟流式输出**两种模式。
 
 - “**极速语音合成**”：在单个 4090 上进行语音合成，可约 15s 生成 5 分钟的长音频，约 3s 生成 20s 的中等长度音频。  
-- “**超低延迟流式输出**”：在单个 4090 上流式输出，可以在 2 ~ 3s 的等待之后对任意长文本进行连续说话。 
+- “**超低延迟流式输出**”：在单个 4090 上流式输出，可以在 2 ~ 3s 的等待之后对任意长文本进行 “连续说话”。 
 
 同时，项目配套提供了两款**通用工具**：
 - 数据端：用于自动化音频筛选的 “语音选择器” `selector.py`。
 - 推理端：支持 GPT-SoVITS 微调模型快速落地的高性能前端部署应用 `app.py`，可以支持上述两种模式。
-
-[奶龙语音生成器 Demo](https://dub.sh/nailong)
 
 长文本极速语音合成效果演示：
 
@@ -18,6 +18,10 @@ https://github.com/user-attachments/assets/07106cb5-4862-46a8-8477-3a662bc90f44
 长文本超低延迟流式输出效果演示：
 
 https://github.com/user-attachments/assets/870b484e-fc95-49a3-93b3-7514cb74e000
+
+多语言无缝切换效果演示：
+
+https://github.com/user-attachments/assets/0311fcd3-d24f-4571-9a78-3fc6ac83d19e
 
 # 奶龙语音克隆模型（Model）
 
@@ -35,8 +39,8 @@ https://github.com/user-attachments/assets/870b484e-fc95-49a3-93b3-7514cb74e000
 
 完整模型仓库有如下两种下载方式：
 
-1. Hugging Face (推荐)： [huggingface ](https://huggingface.co/pengyichen/NaiLong-Voice-Clone/tree/main)下载
-2. HF-Mirror (国内镜像)：[hf-mirror ](https://hf-mirror.com/pengyichen/NaiLong-Voice-Clone/tree/main)下载
+1. Hugging Face (推荐)： [huggingface](https://huggingface.co/pengyichen/NaiLong-Voice-Clone/tree/main) 下载
+2. HF-Mirror (国内镜像)：[hf-mirror](https://hf-mirror.com/pengyichen/NaiLong-Voice-Clone/tree/main) 下载
 
 ### 说明
 
@@ -60,7 +64,7 @@ https://github.com/user-attachments/assets/870b484e-fc95-49a3-93b3-7514cb74e000
 
 对于本项目，安装与使用高性能推理应用的步骤为：
 
-1. 安装 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)。
+1. 安装 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) 。
 2. 将 `GPT_weights`、`SoVITS_weights`、`app.py`、`reference.wav` 下载，并放入 `GPT-SoVITS` 文件夹当中。
 3. 运行 `app.py`，即可生成一个本地的 `6006` 号端口作为网页了。
 
@@ -69,7 +73,7 @@ https://github.com/user-attachments/assets/870b484e-fc95-49a3-93b3-7514cb74e000
 对于通用的特定角色音频克隆项目，需要进行的配置如下：
 
 1. 将微调好的权重放在 `GPT_weights`、`SoVITS_weights` 文件夹中，并更新 `app.py` 的 `vits_path` 与 `gpt_path`。
-2. 放一段 3~10s 的高质量参考音频 `reference.wav`，并相应更改 `app.py` 的两处 `prompt_text` 与 `prompt_lang`（快速推理与流式输出）。
+2. 放一段 3~10s 的高质量参考音频 `reference.wav`，并相应更改 `app.py` 的两处（音频合成与流式输出） `prompt_text` 与 `prompt_lang`。
 3. 根据你希望支持的语言修改 `text_lang`：设为 `auto` 可以支持中，英，日，韩，粤 5 种语言；设为 `zh` 可以效果更好更稳定的支持中文和英文。
 4. 按照你的需要修改 `app.py` 的组件，包括 `Author`、`Contact`、`title` 与 `Button` 的 `label` 等。
 
@@ -86,8 +90,8 @@ https://github.com/user-attachments/assets/870b484e-fc95-49a3-93b3-7514cb74e000
 
 完整数据集仓库有如下两种下载方式：
 
-1. Hugging Face (推荐)： [huggingface ](https://huggingface.co/datasets/pengyichen/NaiLong-Voice-Clone/tree/main)下载
-2. HF-Mirror (国内镜像)：[hf-mirror ](https://hf-mirror.com/datasets/pengyichen/NaiLong-Voice-Clone/tree/main)下载
+1. Hugging Face (推荐)： [huggingface](https://huggingface.co/datasets/pengyichen/NaiLong-Voice-Clone/tree/main) 下载
+2. HF-Mirror (国内镜像)：[hf-mirror](https://hf-mirror.com/datasets/pengyichen/NaiLong-Voice-Clone/tree/main) 下载
 
 ## 数据集介绍
 
