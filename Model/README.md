@@ -4,8 +4,6 @@ license: mit
 
 # 奶龙语音克隆模型
 
-[使用 app.py 得到的 Demo](https://dub.sh/nailong)
-
 本仓库提供了：
 
 1. 奶龙语音克隆模型的权重。
