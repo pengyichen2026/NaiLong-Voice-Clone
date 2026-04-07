@@ -2,13 +2,13 @@
 license: cc-by-nc-sa-4.0
 ---
 
-# 奶龙语音克隆数据集 (NaiLong Voice Clone Dataset)
+# 奶龙语音克隆数据集
 
 ## 数据集下载
 
 由于 `raw_audio`、`vocal_only`、`sliced_vocal` 数据集体积过大，GitHub 仅保留代码与 `nailong_selected` 数据集。
 
-完整数据集有如下两种下载方式：
+完整数据集仓库有如下两种下载方式：
 
 1. Hugging Face (推荐)： [huggingface ](https://huggingface.co/datasets/pengyichen/NaiLong-Voice-Clone/tree/main)下载
 2. HF-Mirror (国内镜像)：[hf-mirror ](https://hf-mirror.com/datasets/pengyichen/NaiLong-Voice-Clone/tree/main)下载
@@ -27,7 +27,7 @@ license: cc-by-nc-sa-4.0
 
 ### 3. `sliced_vocal` (自动化切片)
 - **处理方式**：基于停顿检测、音色突变及总时长控制，将 `vocal_only` 自动化切分为一系列短音频。
-- **说明**：主要意义是为了后续通过选择器筛选出其中是 “完整奶龙” 的片段。
+- **说明**：主要意义是为了后续通过选择器筛选出其中是 “纯正奶龙” 的片段。
 
 ### 4. `nailong_selected` (精选集)
 
