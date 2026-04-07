@@ -39,7 +39,7 @@
 
 对于本项目，安装与使用高性能推理应用的步骤为：
 
-1. 安装 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)。
+1. 安装 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) 。
 2. 将 `GPT_weights`、`SoVITS_weights`、`app.py`、`reference.wav` 下载，并放入 `GPT-SoVITS` 文件夹当中。
 3. 运行 `app.py`，即可生成一个本地的 `6006` 号端口作为网页了。
 
