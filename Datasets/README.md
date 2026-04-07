@@ -1,7 +1,3 @@
----
-license: cc-by-nc-sa-4.0
----
-
 # 奶龙语音克隆数据集
 
 ## 数据集下载
@@ -10,8 +6,8 @@ license: cc-by-nc-sa-4.0
 
 完整数据集仓库有如下两种下载方式：
 
-1. Hugging Face (推荐)： [huggingface ](https://huggingface.co/datasets/pengyichen/NaiLong-Voice-Clone/tree/main)下载
-2. HF-Mirror (国内镜像)：[hf-mirror ](https://hf-mirror.com/datasets/pengyichen/NaiLong-Voice-Clone/tree/main)下载
+1. Hugging Face (推荐)： [huggingface](https://huggingface.co/datasets/pengyichen/NaiLong-Voice-Clone/tree/main) 下载
+2. HF-Mirror (国内镜像)：[hf-mirror](https://hf-mirror.com/datasets/pengyichen/NaiLong-Voice-Clone/tree/main) 下载
 
 ## 数据集介绍
 
@@ -38,7 +34,7 @@ license: cc-by-nc-sa-4.0
 
 ## 音频选择器介绍
 
-除数据集外，本仓库还提供了一份**通用**的音频筛选工具 `selector.py`。
+本仓库还提供了一份**通用**的音频筛选工具 `selector.py`。
 
 该工具根据 `reference` 文件夹当中存放的特定角色参考音频，将 `sliced_vocal` 当中 “大概率是纯该特定角色” 的音频放入 `preselected` 文件夹中。
 
