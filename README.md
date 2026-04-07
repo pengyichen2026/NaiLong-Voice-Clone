@@ -1,7 +1,3 @@
----
-license: mit
----
-
 如果这个项目仓库对你有帮助，欢迎点个 Star ⭐ 支持一下！这是对我持续更新的最大鼓励！
 
 [奶龙语音生成器 Demo](https://dub.sh/nailong)
