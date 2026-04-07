@@ -47,17 +47,20 @@ license: mit
 
 ### 安装与使用
 
+对于本项目，安装与使用高性能推理应用的步骤为：
+
 1. 安装 [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)。
 2. 将 `GPT_weights`、`SoVITS_weights`、`app.py`、`reference.wav` 下载，并放入 `GPT-SoVITS` 文件夹当中。
 3. 运行 `app.py`，即可生成一个本地的 `6006` 号端口作为网页了。
 
 ### 个性化配置
 
-对于通用的特定角色音频克隆项目，配置与搭建的步骤如下：
+对于通用的特定角色音频克隆项目，需要进行的配置如下：
+
 1. 将微调好的权重放在 `GPT_weights`、`SoVITS_weights` 文件夹中，并更新 `app.py` 的 `vits_path` 与 `gpt_path`。
 2. 放一段 3~10s 的高质量参考音频 `reference.wav`，并相应更改 `app.py` 的两处 `prompt_text` 与 `prompt_lang`（快速推理与流式输出）。
 3. 根据你希望支持的语言修改 `text_lang`：设为 `auto` 可以支持中，英，日，韩，粤 5 种语言；设为 `zh` 可以效果更好更稳定的支持中文和英文。
-4. 按照你的需要修改组件，包括 `Author`、`Contact`、`title` 与 `Button` 的 `label` 等。
+4. 按照你的需要修改 `app.py` 的组件，包括 `Author`、`Contact`、`title` 与 `Button` 的 `label` 等。
 
 ## GPT-SoVITS 补丁
 
