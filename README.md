@@ -13,15 +13,21 @@
 
 长文本极速语音合成效果演示：
 
-https://github.com/user-attachments/assets/07106cb5-4862-46a8-8477-3a662bc90f44
+
+https://github.com/user-attachments/assets/659d05a1-2bf2-4bb7-b471-902b8758e9d6
+
 
 长文本超低延迟流式输出效果演示：
 
-https://github.com/user-attachments/assets/870b484e-fc95-49a3-93b3-7514cb74e000
+
+https://github.com/user-attachments/assets/1327fd75-803c-43b5-a6fd-5ff6b0fe0450
+
 
 多语言无缝切换效果演示：
 
-https://github.com/user-attachments/assets/0311fcd3-d24f-4571-9a78-3fc6ac83d19e
+
+https://github.com/user-attachments/assets/ec5864a7-a3a8-4bca-8250-9f58c889df52
+
 
 # 奶龙语音克隆模型（Model）
 
