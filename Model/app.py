@@ -80,7 +80,9 @@ def standard_inference(text):
 
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     short_text = re.sub(r'[\\/:*?"<>|]', '', processed_text)[:5]
-    folder_name = f"{timestamp}_{short_text}"
+    raw_folder_name = f"{timestamp}_{short_text}"
+    folder_name = raw_folder_name.strip()
+    folder_name = folder_name.replace('\n', '').replace('\r', '')
     folder_path = os.path.join(save_root, folder_name)
     os.makedirs(folder_path, exist_ok=True)
 
